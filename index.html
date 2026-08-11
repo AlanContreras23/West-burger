@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>West Burger | Inicio</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="imagens/Logo.png" alt="Logo de West Burger">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/menu.html">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/local.html">Locales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="presentacion">
+            <h1>Novedades de la semana</h1>
+            <p>Próximamente, lo más esperado.</p>
+        </div>
+
+        <div id="carouselExample" class="carousel slide carro">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imagens/Combo 2x1.png" class="d-block" alt="Promoción combo 2x1 de West Burger">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagens/Sorpresa.png" class="d-block" alt="Anuncio de una nueva hamburguesa">
+                </div>
+                <div class="carousel-item">
+                    <img src="imagens/papas bravas.png" class="d-block" alt="Promoción de papas bravas">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <section class="menu-semanal">
+            <div class="titulo-seccion">
+                <h2>Menú semanal</h2>
+                <p>Lo más elegido por nuestros clientes.</p>
+            </div>
+
+            <div class="contenedor-cards">
+                <div class="card">
+                    <img src="imagens/Ruta 40.png" class="card-img-top" alt="Hamburguesa Ruta 40">
+                    <div class="card-body color-card">
+                        <h3 class="card-title h5">Ruta 40</h3>
+                        <p class="card-text">Doble carne, doble cheddar y cebolla caramelizada.</p>
+                        <a href="pages/contacto.html" class="btn color-boton">Pedir</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="imagens/American burger.png" class="card-img-top" alt="Hamburguesa American Burger">
+                    <div class="card-body color-card">
+                        <h3 class="card-title h5">American Burger</h3>
+                        <p class="card-text">Doble carne, doble cheddar y bacon.</p>
+                        <a href="pages/contacto.html" class="btn color-boton">Pedir</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="imagens/La asesina.png" class="card-img-top" alt="Hamburguesa La Asesina">
+                    <div class="card-body color-card">
+                        <h3 class="card-title h5">La Asesina</h3>
+                        <p class="card-text">Triple carne, lechuga, tomate, huevo y queso dambo.</p>
+                        <a href="pages/contacto.html" class="btn color-boton">Pedir</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="imagens/Messirve.png" class="card-img-top" alt="Hamburguesa Messirve">
+                    <div class="card-body color-card">
+                        <h3 class="card-title h5">Messirve</h3>
+                        <p class="card-text">Doble milanesa, tomate, cheddar, bacon y salsa barbacoa.</p>
+                        <a href="pages/contacto.html" class="btn color-boton">Pedir</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 West Burger. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

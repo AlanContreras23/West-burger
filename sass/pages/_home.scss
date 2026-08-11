@@ -1,0 +1,276 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as *;
+
+header {
+    nav.navbar {
+        width: 100%;
+        background-color: $colorLogo;
+        padding: 8px 20px;
+
+        .container-fluid {
+            background-color: transparent;
+        }
+
+        .navbar-brand {
+            img {
+                @include image;
+            }
+        }
+
+        .navbar-collapse {
+            justify-content: flex-end;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        .nav-link,
+        .nav-link.active {
+            color: whitesmoke;
+            margin-left: 12px;
+        }
+
+        .nav-link:hover {
+            color: $colorPrincipal;
+        }
+    }
+}
+
+main {
+    background-color: $colorFondo;
+}
+
+.presentacion {
+    text-align: center;
+    padding: 32px 20px 18px;
+
+    h1 {
+        color: $colorLogo;
+        margin-bottom: 6px;
+    }
+
+    p {
+        color: $colorTexto;
+        margin-bottom: 0;
+    }
+}
+
+.carro {
+    width: 60%;
+    max-width: 760px;
+    margin: 0 auto 48px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: $colorLogo;
+
+    .carousel-item {
+        img {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        filter: none;
+    }
+}
+
+.menu-semanal {
+    padding: 0 24px 48px;
+
+    .titulo-seccion {
+        text-align: center;
+        margin-bottom: 24px;
+
+        h2 {
+            color: $colorLogo;
+            margin-bottom: 6px;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .contenedor-cards {
+        @include flex;
+        gap: 24px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 18rem;
+        background-color: $colorTarjeta;
+        border: 1px solid #e6dccb;
+        overflow: hidden;
+
+        .card-img-top {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            background-color: $colorTarjeta;
+            color: $colorTexto;
+        }
+
+        .card-title {
+            color: $colorLogo;
+        }
+
+        .color-boton {
+            background-color: $colorPrincipal;
+            color: white;
+            border: none;
+        }
+
+        .color-boton:hover {
+            background-color: #b71a1f;
+            color: white;
+        }
+    }
+}
+
+.contenido-pagina {
+    width: min(900px, 90%);
+    margin: 0 auto;
+    padding: 48px 0;
+
+    h1 {
+        color: $colorLogo;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        color: $colorLogo;
+        margin-top: 28px;
+        margin-bottom: 12px;
+    }
+
+    p {
+        line-height: 1.7;
+    }
+}
+
+.grilla-menu {
+    @include flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 28px;
+
+    .card {
+        width: 18rem;
+        background-color: $colorTarjeta;
+        border: 1px solid #e6dccb;
+        overflow: hidden;
+
+        .card-img-top {
+            height: 190px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            background-color: $colorTarjeta;
+        }
+
+        .color-boton {
+            background-color: $colorPrincipal;
+            color: white;
+            border: none;
+        }
+
+        .color-boton:hover {
+            background-color: #b71a1f;
+            color: white;
+        }
+    }
+}
+
+.formulario-contacto {
+    background-color: $colorTarjeta;
+    border: 1px solid #e6dccb;
+    border-radius: 10px;
+    padding: 24px;
+    margin-top: 24px;
+
+    label {
+        font-weight: 600;
+        margin-bottom: 6px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #cfc7ba;
+        border-radius: 6px;
+        margin-bottom: 16px;
+        background-color: white;
+    }
+
+    textarea {
+        min-height: 130px;
+        resize: vertical;
+    }
+
+    button {
+        background-color: $colorPrincipal;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        padding: 10px 18px;
+    }
+
+    button:hover {
+        background-color: #b71a1f;
+    }
+}
+
+footer {
+    background-color: $colorLogo;
+    color: whitesmoke;
+    text-align: center;
+    padding: 22px 16px;
+
+    p {
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        nav.navbar {
+            padding: 8px 12px;
+
+            .nav-link,
+            .nav-link.active {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .presentacion {
+        padding-top: 24px;
+    }
+
+    .carro {
+        width: 92%;
+        margin-bottom: 36px;
+    }
+
+    .menu-semanal {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .menu-semanal .card,
+    .grilla-menu .card {
+        width: 100%;
+        max-width: 340px;
+    }
+}

@@ -1,1 +1,5 @@
-h1{background-color: blue;}
+// Reset
+@use "base/reset";
+
+// Estilos generales y páginas
+@use "pages/home";
